@@ -6,11 +6,11 @@ const connection=mysql.createConnection({
     password:'',
     database:'mysql'
   });
-  /*connection.connect(function(error){
+ connection.connect(function(error){
       if(error){
           throw error;
       }else{
           console.log('Conexion correcta');
       }
-  });*/
+  });
   module.exports=connection;
