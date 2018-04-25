@@ -6,7 +6,7 @@ var City={
     getCityById:function (id, callback){
         return db.query("select * from ciudad where id=?",[id],callback);
     },
-    addCity:function(City,callback){
+    crearCity:function(City,callback){
         return db.query("Insert into ciudad values(?,?,?)",[City.id,City.nombre,City.mensajeros],callback);
     },
     deleteCity:function(id,callback){
