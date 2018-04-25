@@ -8,7 +8,6 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 const ciudad = require('./routes/ciudad');
 var app = express();
-db.connect();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
